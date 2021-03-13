@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Today I Learned"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Ikhoon"
-description              : "Darkchoco's Documents"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : ""
+name                     : "Darkchoco's Blog"
+description              : "Darkchoco's Blog"
+url                      : "https://darkchoco.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+teaser                   : "/assets/images/dark-chocolate-500x300.png"  # path of fallback teaser image, 500x300
+logo                     : "/assets/images/savage-chicken-logo.png"  # path of logo image to display in the masthead, 88x88
+masthead_title           : "Darkchoco's Blog" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -76,7 +76,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/dark-chocolate-500x300.png"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -94,10 +94,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "darkchoco"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Darkchoco"
+  avatar           : "/assets/images/dark-chocolate-300x300.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Wer rastet, der rostet."
-  location         : "Somewhere"
+  location         : "Frankfurt, Germany"
   email            :
   links:
     - label: "Email"
@@ -130,7 +130,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      # url: "https://github.com/darkchoco"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -210,7 +210,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Germany/Berlin  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -275,7 +275,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: # true
       share: true
