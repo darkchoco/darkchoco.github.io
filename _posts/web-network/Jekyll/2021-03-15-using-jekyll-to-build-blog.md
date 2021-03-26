@@ -1,8 +1,8 @@
 ---
 title: Jekyll로 블로그 만들기  
 date : 2021-03-15 23:00  
-categories: jekyll  
-tags: jekyll asciidoc 
+categories: Jekyll  
+tags: Jekyll AsciiDoc 
 toc: true  
 comments : true  
 ---
