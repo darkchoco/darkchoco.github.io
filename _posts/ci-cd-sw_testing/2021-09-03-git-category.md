@@ -1,7 +1,7 @@
 ---
 title: Git Commit Messages 분류
 date: 2021-09-03 23:00
-categories: CI-CD-SW_Testing
+categories: CI-CD
 tags: Git
 // toc: true  
 comments : true
