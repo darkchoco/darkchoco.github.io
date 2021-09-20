@@ -1,10 +1,11 @@
 ---
 title: Jekyll로 블로그 만들기  
-date : 2021-03-15 23:00  
+date: 2021-03-15 23:00  
 categories: Jekyll  
 tags: Jekyll AsciiDoc 
 toc: true  
-comments : true  
+comments: true
+// author_profile: true
 ---
 
 Jekyll을 사용하여 웹사이트 작업을 마무리한 후 든 생각은, 생각처럼 쉽게 되지 않는다는 것이었다.  
@@ -32,17 +33,16 @@ Stack Overflow가 이렇게 도움 안 된 적이 있었나 싶기도 하고.
 ## 환경 구성
 
 ### WSL2
-Windows 환경에서의 Ruby는 맞지 않는 옷을 억지로 입힌 것처럼 보인다. (아직까지도!)  
-Docker를 사용할까 했지만 사용 중인 WSL2에 Ruby를 설치하여 쓰기로 했다.  
+Windows 환경에서의 Ruby는 늘 맞지 않는 옷을 억지로 입힌 것처럼 보인다. (2021년 현재까지도)  
+Docker를 사용할까 했지만 그냥 WSL2에 Ruby를 설치하여 쓰기로 했다.  
 아주 잘 된다.
 
 ### dev & prd 구성
-시작시 시도한 것들이 너무 많아서 매번 `git`로 환경을 옮겨다니기 번거로왔다.  
-그래서 `dev`와 `prd` 디렉토리를 각각 구성하고 사이트를 통째로 한벌씩 만들어 놓았다.  
-`dev`에서 수차례 테스트 진행 후, 통과한 것만 `prd`로 옮겨 push 한다. (push = release 라서 어쩔 수 없다)  
+개발환경과 실환경을 따로 구성해놓으면 Jekyll의 구성 변경 및 테스트 등을 할 때 편하다.  
+그래서 `dev`와 `prd` 디렉토리를 따로 만든 후 사이트를 통째로 한벌씩 만들어 놓았다.  
+`dev`에서 테스트 진행 후, 통과한 것만 `prd`로 옮겨 push 한다. (GitHub Pages에서는 push 자체가 release 라는 것을 잊지 말자)  
 `dev`와 `prd` 사이의 관리는 `WinMerge`를 쓰면 아주 편하다.
 
-post 작성 외에 별 변화가 없다면 `dev`는 나중에 없애도 괜찮을 듯.
 
 ### 로컬에서 실행하기
 Disqus 사용시, 아래와 같이 사이트 구동 명령에 `JEKYLL_ENV=production`을 추가하면 Disqus 블록을 로컬환경에서도 불러올 수 있다.
@@ -52,8 +52,8 @@ JEKYLL_ENV=production bundle exec jekyll serve
 ```
 <br/>
 `_config.yml` 같은 Jekyll 주요 구성요소의 변경은 사이트를 리스타트해야 반영된다. 하지만 posting 내역은 실시간 반영이 가능한데, 아쉽게도 WSL 환경에서는 잘 되지 않는다.  
-[5년 전에 유사한 이슈가 제기](https://github.com/microsoft/WSL/issues/216)되었고  `--force_polling` 옵션을 쓰면 해결은 되지만 (`bundle exec jekyll serve --force_polling` 실행), 대신 CPU 리소스가 비정상적으로 높게 사용되는 문제가 발생했다. 즉 해결되었다고 보긴 어렵다.    
-크게 불편한 것도 아니라서 그냥 리스타트 하면서 사용 중이다. (차후 posting이 많아져서 빌드 시간이 상당히 소요되면 생각이 바뀔지도)
+[5년 전에 유사한 이슈가 제기](https://github.com/microsoft/WSL/issues/216)되었고  `--force_polling` 옵션을 쓰면 해결은 되지만 (`bundle exec jekyll serve --force_polling` 실행), 대신 CPU 리소스가 비정상적으로 높게 사용되는 문제가 발생했다.    
+크게 불편한 것도 아니라서 그냥 리스타트 하면서 사용 중이다. (차후 posting이 많아져서 빌드 시간이 상당히 소요되면 생각이 바뀔지도 모르겠다)
 
 
 ## Customization

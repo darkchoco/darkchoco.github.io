@@ -1,9 +1,11 @@
 ---
-title:  "IntelliJ의 Tomcat output 내 한글 출력"
-date:   2021-05-20 23:00
+title: IntelliJ의 Tomcat output 내 한글 출력
+date: 2021-05-20 23:00
 categories: Java-Spring
 tags: Java IntelliJ
-comments : true
+// toc: true
+comments: true
+// author_profile: true
 ---
 
 IntelliJ에서 Tomcat output을 보면 한글이 다 깨질 때가 있다.  

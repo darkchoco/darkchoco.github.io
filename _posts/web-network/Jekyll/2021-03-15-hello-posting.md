@@ -1,10 +1,11 @@
 ---
 title: Hello, Posting!
-date : 2021-03-15 00:00
+date: 2021-03-15 00:00
 categories: Jekyll  
-tags: Jekyll
-toc: true
-comments : true
+// tags: 
+// toc: true
+comments: true
+// author_profile: false
 ---
 
 시작 페이지.

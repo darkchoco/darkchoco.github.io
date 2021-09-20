@@ -1,14 +1,16 @@
 ---
-title:  "PR 리뷰시 유념할 점"
-date:   2021-05-27 23:00
+title: PR 리뷰시 유념할 점
+date: 2021-05-27 23:00
 categories: Agile
 tags: CodeReview PR
-comments : true
+// toc: true  
+comments: true
+// author_profile: true
 ---
 
 원문은 ["I've code reviewed over 750 pull requests at Amazon. Here's my exact thought process."](https://curtiseinsmann.medium.com/ive-code-reviewed-over-750-pull-requests-at-amazon-here-s-my-exact-thought-process-cec7c942a3a4).
 
-잊고 싶지 않은 것들이 몇개 있어서 따로 옮긴다.
+잊고 싶지 않은 것들을 몇개 따로 옮긴다.
 
 * 코드 리뷰는 작성자나 리뷰어 모두에게 새로운 것을 배울 기회다.   
   다양한 문제풀이 방식을 접할 수 있고 이는 나중에 본인이 코드 작성시 큰 도움이 된다.
