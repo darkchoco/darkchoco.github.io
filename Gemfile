@@ -1,9 +1,6 @@
 source "https://rubygems.org"
 # gemspec
 
-
-source "https://rubygems.org"
-
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -19,6 +16,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
+gem "jekyll-sass-converter", "~> 2.0"
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -30,3 +28,6 @@ gem "minimal-mistakes-jekyll"
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
 end
+
+# gem "webrick", "~> 1.9"
+gem "webrick"

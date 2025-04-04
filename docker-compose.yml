@@ -1,0 +1,10 @@
+services:
+  jekyll:
+    image: jekyll-3.10.0-updated
+    container_name: jekyll-310
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - '4000:4000'
+    working_dir: /srv/jekyll
+    command: ['bundle', 'exec', 'jekyll', 'serve', '--host', '0.0.0.0']
