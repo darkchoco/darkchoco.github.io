@@ -3,8 +3,8 @@ title: 코드 리뷰 체크리스트 (SW 개발/테스트/배포를 모두 고�
 date: 2022-02-01 23:00
 categories: Agile
 tags: CodeReview PR
-// toc: true  
-comments: true
+// toc: true
+// comments: true
 // author_profile: true
 ---
 
@@ -35,5 +35,4 @@ comments: true
 
 <br/>
 
-그밖의 체크리스트는 Performance Test, Security Test, Integration Test 등의 필요에 따라 활용할 수 있다.  
-PR 리뷰시 고려할 수는 있겠다. 
+그밖의 체크리스트는 Performance Test, Security Test, Integration Test 등의 필요에 따라 활용할 수 있다.
