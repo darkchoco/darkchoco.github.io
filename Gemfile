@@ -15,8 +15,9 @@ source "https://rubygems.org"
 # To upgrade, run `bundle update`.
 
 gem "jekyll"
-gem "minimal-mistakes-jekyll"
-gem "jekyll-sass-converter", "~> 2.0"
+gem "minimal-mistakes-jekyll", "~> 4.26"
+gem "webrick", "~> 1.8"
+gem "eventmachine", "~> 1.2.7", platforms: [:ruby]
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -28,6 +29,3 @@ gem "jekyll-sass-converter", "~> 2.0"
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
 end
-
-# gem "webrick", "~> 1.9"
-gem "webrick"
